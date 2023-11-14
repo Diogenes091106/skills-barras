@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Serif Display', serif;
+}
+
+    body{
+        height: 100vh;
+        background-color: #c2c2c2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills{
+        width: 500px;
+        padding: 40px;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: 0 15px 20px #00000027;
+    }
+
+    .skills ul{
+        list-style: none;
+    }
+
+    .skills ul li{
+        margin: 20px 0;
+    }
+
+    .skills .barras{
+        background-color: #ccc;
+        display: block;
+        height: 20px;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        transition: .5s ease-in-out;
+    }
+
+.barras > span{
+    height: 20px;
+    background: linear-gradient(to right,#7b00ffd5, rgb(108, 0, 111));
+    position: absolute;
+}
+
+.html{
+    width: 80%;
+    animation: html 3s;
+}
+
+.css{
+    width: 80%;
+    animation: css 4s;
+}
+
+.javascript{
+    width:30%;
+    animation: javascript 3s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
